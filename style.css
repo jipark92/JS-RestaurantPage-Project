@@ -36,11 +36,11 @@ li:hover {
 }
 
 .information-container {
-    height: 88vh;
+    min-height: 88vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 5rem;
     color: white;
 }
@@ -54,6 +54,7 @@ li:hover {
     color: black;
     border-radius: 20px;
     box-shadow: 0px 0px 50px#86EFAC;
+    
 }
 
 .information-container button:hover {
@@ -84,6 +85,36 @@ li:hover {
     font-size: 1.8rem;
     text-shadow: 0 1rem 1rem currentColor;
  }
+
+.menu-container{
+    display:grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 330px);
+    grid-gap: 25px;
+}
+
+.background {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    opacity: 10%
+}
+
+.menu-container img {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    width: 230px;
+    height: 150px;
+}
+
+.menu-container > div {
+    /* height: 250px;
+    width: 250px; */
+    border: 1px solid white;
+
+}
+
 
 .form-container {
     display: flex;
