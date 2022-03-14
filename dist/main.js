@@ -182,6 +182,8 @@ const myContactPageModule = (()=>{
                 <input type="email" name="email" placeholder="email" required></input>
             <label for="commentbox">YOUR MESSAGE HERE:</label>
                 <textarea class="comment-box" name="commentbox" placeholder="your message here..." rows="10" cols="50"></textarea>
+            <button type="submit">Submit</button>
+
         </form>
     </article>
     <footer class="footer-container">
