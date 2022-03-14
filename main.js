@@ -7,7 +7,7 @@ const myHomePageModule =(()=>{
     content.appendChild(homePage)
     
     homePage.innerHTML = 
-    `<header class="header-container">  
+`<header class="header-container">  
     <nav class="navbar">
         <ul class="tabs">
             <li class="home-page">HOME</li>
@@ -32,6 +32,6 @@ const myHomePageModule =(()=>{
 <footer class="footer-container">
     <p>Website created by <a href="https://github.com/norfkorean">Ji Park</a></p>
 </footer>`
-    ;
+;
     
 })();
