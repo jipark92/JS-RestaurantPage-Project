@@ -1,19 +1,24 @@
 *{
     margin: 0;
-    font-size: 1rem;
+    padding: 0;
 }
 
 #content {
-    background-color: lightblue;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flyonsdenfitness.co.uk%2Fwp-content%2Fuploads%2F2020%2F03%2Fvegetables-background-000046272610_full1.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-container{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
     width: 100vw;
     min-height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 1000;
 }
 
 .navbar{ 
@@ -25,23 +30,83 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
+    text-shadow: 0 1rem 1rem currentColor;
+}
+
+li:hover {
+    color: #86EFAC;
+    transform: scale(1.4);
+    cursor: pointer;
 }
 
 .information-container {
-    height: 80vh;
+    height: 88vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    gap: 5rem;
+    color: white;
 }
 
+.information-container button {
+    background:linear-gradient(45deg,#15803D,#86EFAC );
+    border: none;
+    height: 5rem;
+    width: 8rem;
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px#86EFAC;
+}
+
+.information-container button:hover {
+    background-color: #14532D;
+    color: white;
+    box-shadow: 0px 0px 50px#166534;
+
+}
+
+.information-container img {
+    height: 40vh;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    gap: 14rem;
+    flex-wrap: wrap;
+}
+
+.welcome-container h1{
+   font-size: 2.2rem;
+   text-shadow: 0 1rem 1rem currentColor;
+}
+
+.welcome-container p{
+    font-size: 1.8rem;
+    text-shadow: 0 1rem 1rem currentColor;
+ }
+
 .footer-container {
-    border-top: 3px solid black;
+    border-top: 3px solid white;
     width: 100vw;
-    height: 10vh;
+    height: 2vh;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #DCFCE7;
+}
+
+.footer-container a:hover {
+    color: #16A34A;
 }
