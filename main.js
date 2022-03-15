@@ -19,7 +19,7 @@ const myHomePageModule =(()=>{
         <div class="welcome-container">
             <h1>Welcome to Plants and Teas</h1>
             <p>Eat Healthy and Natural Drinks</p>
-            <button>DISCOVER MENU</button>
+            <button class="discover-menu">DISCOVER MENU</button>
         </div>
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.drweil.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fdiet-nutrition_nutrition_discover-matcha-tea_2716x1810_000055981922.jpg&f=1&nofb=1">
     </article>
@@ -28,6 +28,13 @@ const myHomePageModule =(()=>{
     </footer>
     `;
 
+    const discoverMenuButton = document.querySelector('.discover-menu');
+    discoverMenuButton.addEventListener('click',()=>{
+        console.log('discover menu click');
+        homePage.remove();
+        myMenuPageModule();
+    });
+    
     const menuButton = document.querySelector('.menu-page');
     menuButton.addEventListener('click', (e)=>{
         e.stopPropagation;
