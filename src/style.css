@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flyonsdenfitness.co.uk%2Fwp-content%2Fuploads%2F2020%2F03%2Fvegetables-background-000046272610_full1.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container{
+    border-bottom: 3px solid white;
+    width: 100vw;
+    min-height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 1000;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    text-shadow: 0 1rem 1rem currentColor;
+}
+
+li:hover {
+    color: #86EFAC;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.information-container {
+    min-height: 88vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+}
+
+.information-container button {
+    background:linear-gradient(45deg,#15803D,#86EFAC );
+    border: none;
+    height: 5rem;
+    width: 8rem;
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px#86EFAC;
+}
+
+.information-container button:hover {
+    background-color: #14532D;
+    color: white;
+    box-shadow: 0px 0px 50px#166534;
+}
+
+.information-container img {
+    height: 50vh;
+    width: 40vw;
+    opacity: 75%;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14rem;
+    flex-wrap: wrap;
+}
+
+.welcome-container h1{
+   font-size: 2.2rem;
+   text-shadow: 0 1rem 1rem currentColor;
+}
+
+.welcome-container p{
+    font-size: 1.8rem;
+    text-shadow: 0 1rem 1rem currentColor;
+ }
+
+.menu-container{
+    display:grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 330px);
+    grid-gap: 25px;
+}
+
+.background {
+    position: absolute;
+    height: 330px;
+    width: 250px;
+    background-color: white;
+    opacity: 10%
+}
+
+.menu-container img {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    width: 230px;
+    height: 150px;
+}
+
+.menu-container > div {
+    /* height: 250px;
+    width: 250px; */
+    border: 1px solid white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;   
+}
+
+.form-container legend {
+    font-size: 2rem;
+}
+
+.form-container label {
+    color:white;
+    font-weight: 1000;
+    padding-top: 1rem;
+}
+
+.form-container > .comment-box {
+     resize: none;
+}
+
+.form-container > button {
+    height: 30px;
+    width: 300px;
+}
+
+.footer-container {
+    border-top: 3px solid white;
+    width: 100vw;
+    height: 2vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #DCFCE7;
+}
+
+.footer-container a:hover {
+    color: #16A34A;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width:800px){
+    .information-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
