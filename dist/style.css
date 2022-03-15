@@ -161,6 +161,10 @@ li:hover {
     color: #16A34A;
 }
 
+button {
+    cursor: pointer;
+}
+
 @media (max-width:800px){
     .information-container{
         display: flex;
